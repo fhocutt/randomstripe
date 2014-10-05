@@ -11,6 +11,17 @@
 
 import random
 
+def main():
+    #prompt
+    #get the input
+    #sanitize it
+    #do the math
+    #generate an image
+    #print a pattern
+
+    print "done"
+
+
 #TODO: error-handling and input-sanitizing
 
 #TODO: add options to use >2 colors
@@ -33,11 +44,14 @@ color1 = random.sample(rows, rowscolor1)
 
 for x in rows: 
     if x in color1: 
-        print "1"
+        print "Row %s: 1" % (x+1)
     else: 
-        print "X" 
+        print "Row %s: X" % (x+1)
 
 #TODO: Create a knitting pattern from this, like: 
 #"Row 1: color 1. 
 # Rows 2-4: color 2."
 # etc.
+
+if __name__ == "__main__":
+    main()
